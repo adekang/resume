@@ -138,18 +138,31 @@
     .userInfo img{
       width: 90px;
     }
+    @media (max-width:500px) {
+
     section .basicInfo{
       display: flex;
     }
     section .basicInfo div{
       padding-top: 5px;
     }
-    section .basicInfo>div:last-child{
+    section .basicInfo .last{
       padding-left: 20px;
     }
     .page2 {
         page-break-before: always;
       }
+      .userInfo img{
+        display:none;
+    }
+    section .basicInfo{
+      display: inline-block;
+    }
+    section .basicInfo .last{
+      padding-top: 0;
+      padding-left: 0;
+    }
+    }
   </style>
 </head>
 <body>
@@ -173,7 +186,7 @@
         <div class="icon-list"><span class="iconfont icon-phone"></span><a href="tel:18398203270">18398203270</a></div>
         <div class="icon-list"><span class="iconfont icon-wechat"></span>18398203270</div>
       </div>
-      <div>
+      <div class='last'>
         <div class="icon-list"><span class="iconfont icon-email"></span><a href="mailto:adekang@163.com">adekang@163.com</a></div>
         <div class="icon-list"><span class="iconfont icon-education"></span>本科</div>
       </div>
