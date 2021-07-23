@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>在线简历</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_974371_cqiyab42oyq.css">
+  <style>
+    /*css reset*/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      margin-left: 1em;
+    }
+    li {
+      margin-top: 10px;
+    }
+    strong {
+      color:  rgb(87,183,175);
+    }
+    a{
+      color: #333;
+      text-decoration: none;
+      border-bottom: 2px solid rgb(63,207,195);
+    }
+    /*layout*/
+      body {
+        display: grid;
+        grid: auto auto auto / 1fr;
+        padding: 0 10px 30px 10px;
+        max-width: 21cm;
+        min-height: 29.7cm;
+        margin:  0 auto;
+
+      }
+      main {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      aside {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    /*common*/
+    body {
+      font: 17px/1.5 Arial;
+      color: #333;
+      padding-bottom: 30px;
+    }
+    
+    /*page*/
+    section {
+      display: grid;
+      grid: auto auto / 50px 120px 1fr;
+      align-items: center;
+      padding:0px 10px 10px;
+    }
+    section > .iconfont {
+      grid-row: 1;
+      grid-column: 1;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: #66a9a3;
+      border-radius: 50%;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    section > h2 {
+      grid-row: 1;
+      grid-column: 2;
+      font-size: 18px;
+    }
+    section > hr {
+      grid-row: 1;
+      grid-column: 3;
+      border: none;
+      height: 3px;
+      background: #66a9a3;
+    }
+    section >.detail {
+      grid-row: 2;
+      grid-column: 2/span 2
+    }
+    section >.detail02 {
+      grid-row: 3;
+      grid-column: 2/span 2
+    }
+    section .icon-list {
+      display: flex;
+      align-items: center;
+    }
+    section .icon-list .iconfont {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    section .skill-bar dt {
+      margin-top: 10px;
+    }
+    section .skill-bar dd {
+      height: 3px;
+      background: #eaeaea;
+    }
+    section .skill-bar dd div {
+      height: 100%;
+      background: #66a9a3;
+      margin-top: 10px;
+    }
+    section .timeline-panel {
+      display: grid;
+      grid: auto auto / auto 1fr auto;
+      align-items: center;
+      margin-top: 10px;
+    }
+    section .timeline-panel > h3 {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    section .timeline-panel .intro {
+      grid-row: 1;
+      grid-column: 3;
+      color: #666;
+    }
+    section .timeline-panel .detail {
+      grid-row: 2;
+      grid-column: 1/span 3;
+    }
+    .userInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:10px 10px 0 50px;
+    }
+    .userInfo img{
+      width: 90px;
+    }
+    section .basicInfo{
+      display: flex;
+    }
+    section .basicInfo div{
+      padding-top: 5px;
+    }
+    section .basicInfo>div:last-child{
+      padding-left: 20px;
+    }
+    .page2 {
+        page-break-before: always;
+        margin-top:100px;
+      }
+  </style>
+</head>
+<body>
+  <aside>
+    <header class="userInfo">
+     <div>
+      <h2>康毅龙</h2>
+      <div class="detail">
+        求职意向：前端开发工程师
+      </div>
+     </div>
+        <img src="https://www.hualigs.cn/image/60fa2b9bb6a94.jpg"/>
+    </header>
+    <!-- 基本信息 -->
+    <section>
+      <span class="iconfont icon-personal"></span>
+      <h2>基本信息</h2>
+      <hr>
+      <div class="detail basicInfo" >
+        <div>
+        <div class="icon-list"><span class="iconfont icon-phone"></span><a href="tel:18398203270">18398203270</a></div>
+        <div class="icon-list"><span class="iconfont icon-wechat"></span>18398203270</div>
+      </div>
+      <div>
+        <div class="icon-list"><span class="iconfont icon-email"></span><a href="mailto:adekang@163.com">adekang@163.com</a></div>
+        <div class="icon-list"><span class="iconfont icon-education"></span>本科</div>
+      </div>
+      </div>
+    </section>
+    <!-- 掌握技能 -->
+    <section>
+      <span class="iconfont icon-introduction"></span>
+      <h2>掌握技能</h2>
+      <hr>
+      <div class="detail">
+        <ul>
+          <li>熟悉使用HTML5标签编写语义化页面。</li>
+          <li>熟悉使用CSS/<strong>SCSS</strong> 、文档流、盒模型、<strong>flex</strong> 、<strong>grid</strong>布局。</li>
+          <li>熟悉JavaScript、<strong>ES6</strong>部分新特性语法、DOM操作、JSONP、原型链的使用，了解<strong>TypeScript</strong>的使用。</li>
+          <li>熟悉使用 <strong>Vue</strong>框架的模版语法，<strong>响应式原理</strong>，并有相关项目经验。会使用<strong>Vue-router</strong>、Vuex。</li>
+          <li>了解使用 <strong>React</strong>、<strong>React-router</strong>和Redux。会使用常用<strong>Hooks API</strong>、生命周期、高阶组件。</li>
+          <li>了解Git 、GitHub工作部署。</li>
+          <li>了解webpack基本配置。</li>
+        </ul>
+      </div>
+    </section>
+  </aside>
+  <main>    
+    <section>
+      <span class="iconfont icon-project"></span>
+      <h2>项目经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <h3>beans UI</h3>
+          <p class="intro">
+            <a href="https://github.com/adekang/vue_beans-ui">源码私有</a>
+            <a href="https://adekang.github.io/vue_beans-ui-web/#/">项目预览</a>
+          </p>
+          <div class="detail">
+            <ul>
+              <li>技术栈： <strong>Vue 3</strong> 、<strong>TypeScript</strong>、<strong>SCSS</strong> </li>
+              <li>制作有日常常用的Switch、Button、Dialog、Tabs、Input 等组件。</li>
+              <li>制作思路以及遇到问题记录在<a href="https://www.yuque.com/u12163881/kamvne/fmtkf7">个人博客</a>。</li>
+            </ul>
+          </div>
+        </div> 
+        <div class="timeline-panel">
+          <h3>豆子记账</h3>
+          <p class="intro">
+            <a href="https://github.com/adekang/react-beans-bookkeeping">源码私有</a>
+            <a href="https://adekang.github.io/react-beans-bookkeeping-web/#/index">项目预览</a>
+          </p>
+          <div class="detail">
+            <ul>
+              <li>技术栈：<strong>React</strong>、<strong>React-router</strong>、<strong>TypeScript</strong>、<strong>styled-components</strong> 开发的单移动端页面应用。</li>
+                <li>项目介绍：本应用使用React-router划分了三个分页面:记账，首页，明细，统计。 实现了复杂信息保存，数据统计展示，使用自定义Hooks + localstorage 实现状态管理,使用day.js实现时间管理。</li>
+              <li>实现功能：<strong>记账</strong>、明细、<strong>数据统计</strong>。</li>
+              <li>该项目制作时，遇到 webpack 问题，解决方案记录在<a href="https://www.yuque.com/u12163881/kamvne/him1ql">个人博客</a>。</li>
+            </ul>
+          </div>
+        </div>
+
+        </div>
+        <div class="detail02 page2">
+          <div class="timeline-panel">
+            <h3>豆子商品后台管理系统</h3>
+            <p class="intro">
+              <a href="https://github.com/adekang/beansshop-vue">源码私有</a>
+              <a href="https://adekang.github.io/beansshop-vue-web/#/login">项目预览</a>
+            </p>
+            <div class="detail">
+              <ul>
+                <li>技术栈：<strong>Vue2</strong>、Vue-router、Vuex、<strong>Element-UI</strong>、Axios、Echarts</li>
+                <li>实现功能：用户管理、权限管理、商品管理、数据统计的统计。</li>
+                <li>该项目的一些制作心得记录在<a href="https://www.yuque.com/u12163881/kamvne/ndcgus">个人博客</a>。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-panel">
+            <h3>不二导航</h3>
+            <p class="intro">
+              <a href="https://github.com/adekang/Fuji-Navigator">源码私有</a>
+              <a href="https://adekang.github.io/Fuji-Navigator/dist/index.html">项目预览</a>
+            </p>
+            <div class="detail">
+              <ul>
+                <li>技术栈：<strong>JavaScript</strong>、<strong>CSS</strong></li>
+                <li>项目介绍：这是在我学习完HTML、CSS和JavaScript基础后，制作的导航网站。它能自定义导航并且支持<strong>键盘事件</strong>，按下相应首字母，跳转页面。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section>
+      <span class="iconfont icon-project"></span>
+      <h2>开源项目</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <h3>TodoList</h3>
+          <p class="intro">
+            <a href="https://github.com/adekang/vue3-todoList">源码私有</a>
+            <a href="https://adekang.github.io/vue3-todoList-web/index.html">项目预览</a>
+          </p>
+          <div class="detail">
+            <ul>
+              <li>技术栈：Vue3、TypeScript</li>
+              <li>项目介绍：基于自己打卡需求，制作了一个TODO待办,输入信息后按enter记录，使用localstorage进行<strong>数据持久化存储</strong>，实现可全选一键删除和删除已选中TODO。</li>
+            </ul>
+          </div>
+        </div>
+        </div>    
+    </section>  
+        <!-- 教育经历 -->
+        <section>
+          <span class="iconfont icon-education"></span>
+          <h2>教育经历</h2>
+          <hr>
+          <div class="detail">
+            <div class="timeline-panel">
+              <h3>成都东软学院</h3>
+              <div class="date"> &nbsp &nbsp &nbsp 2018.09~2022.07</div>
+              <p class="intro">电子商务专业</p>
+              <div class="detail">
+                <li>主修课程：商务网站网页设计实务、动态商务网站设计基础、电商视觉设计、电子商务数据分析与处理、商务网站美术设计等</li>
+                <li>获奖和证书:CET4、计算机二级证书、初级会计证书、新零售比赛二等奖、视频剪辑比赛院一等奖</li>
+              </div>
+            </div>        
+          </div>
+        </section> 
+    <section>
+      <span class="iconfont icon-project"></span>
+      <h2>其他链接</h2>
+      <hr>
+      <div class="detail">
+           <ul>
+             <li>
+              我的 <a href="https://www.yuque.com/u12163881">博客</a>，记录了我整个学习的学习笔记和相关心得。   
+             </li>
+             <li>
+              我的 <a href="https://github.com/adekang">GitHub</a>，过去4个月累计有<strong>600</strong>余次提交。
+             </li>
+           </ul>
+        </div>
+    </section>
+  </main>
+</body>
+</html>
