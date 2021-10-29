@@ -5,6 +5,7 @@
   <title>在线简历</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="//at.alicdn.com/t/font_974371_cqiyab42oyq.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2725541_053en4dwuqt3.css">
   <style>
     /*css reset*/
     * {
@@ -138,8 +139,6 @@
     .userInfo img{
       width: 90px;
     }
-    @media (max-width:500px) {
-
     section .basicInfo{
       display: flex;
     }
@@ -149,10 +148,8 @@
     section .basicInfo .last{
       padding-left: 20px;
     }
-    .page2 {
-        page-break-before: always;
-      }
-      .userInfo img{
+    @media (max-width:500px) {
+    .userInfo img{
         display:none;
     }
     section .basicInfo{
@@ -163,6 +160,10 @@
       padding-left: 0;
     }
     }
+    .page2 {
+        margin-top: 55px;
+        page-break-before: always;
+      }
   </style>
 </head>
 <body>
@@ -174,7 +175,7 @@
         求职意向：前端开发工程师
       </div>
      </div>
-        <img src="https://www.hualigs.cn/image/60fa2b9bb6a94.jpg"/>
+        <img src="https://i.loli.net/2021/10/29/AEQDrgG7S4vhOtJ.jpg"/>
     </header>
     <!-- 基本信息 -->
     <section>
@@ -183,12 +184,12 @@
       <hr>
       <div class="detail basicInfo" >
         <div>
-        <div class="icon-list"><span class="iconfont icon-phone"></span><a href="tel:18398203270">18398203270</a></div>
-        <div class="icon-list"><span class="iconfont icon-wechat"></span>18398203270</div>
+        <div class="icon-list"><span class="iconfont icon-phone"></span><a href="tel:18398203270">18398203270（微信同号）</a></div>
+        <div class="icon-list"><span class="iconfont icon-github"></span><a href="https://github.com/adekang">GitHub</a></div>
+
       </div>
       <div class='last'>
         <div class="icon-list"><span class="iconfont icon-email"></span><a href="mailto:adekang@163.com">adekang@163.com</a></div>
-        <div class="icon-list"><span class="iconfont icon-education"></span>本科</div>
       </div>
       </div>
     </section>
@@ -201,11 +202,10 @@
         <ul>
           <li>熟悉使用HTML5标签编写语义化页面。</li>
           <li>熟悉使用CSS/<strong>SCSS</strong> 、文档流、盒模型、<strong>flex</strong> 、<strong>grid</strong>布局。</li>
-          <li>熟悉JavaScript、<strong>ES6</strong>部分新特性语法、DOM操作、JSONP、原型链的使用，了解<strong>TypeScript</strong>的使用。</li>
-          <li>熟悉使用 <strong>Vue</strong>框架的模版语法，<strong>响应式原理</strong>，并有相关项目经验。会使用<strong>Vue-router</strong>、Vuex。</li>
-          <li>了解使用 <strong>React</strong>、<strong>React-router</strong>和Redux。会使用常用<strong>Hooks API</strong>、生命周期、高阶组件。</li>
-          <li>了解Git 、GitHub工作部署。</li>
-          <li>了解webpack基本配置。</li>
+          <li>熟悉JavaScript、<strong>ES6</strong>部分新特性语法、DOM操作、JSONP、原型链的使用，<strong>TypeScript</strong>的使用。</li>
+          <li>熟练使用 <strong>React</strong>、<strong>React-router</strong>和Redux，并有相关项目经验。会使用常用<strong>Hooks API</strong>、生命周期、高阶组件。</li>
+          <li>熟悉<strong>Vue</strong>框架的模版语法，<strong>响应式原理</strong>，。会使用<strong>Vue-router</strong>、Vuex。</li>
+          <li>了解Git 、Gitlab工作部署；了解webpack基本配置。</li>
         </ul>
       </div>
     </section>
@@ -215,18 +215,19 @@
       <span class="iconfont icon-project"></span>
       <h2>项目经历</h2>
       <hr>
-      <div class="detail">
+      <div class="detail">  
         <div class="timeline-panel">
-          <h3>beans UI</h3>
+          <h3>lu ui</h3>
           <p class="intro">
-            <a href="https://github.com/adekang/vue_beans-ui">源码私有</a>
-            <a href="https://adekang.github.io/vue_beans-ui-web/#/">项目预览</a>
+            <a href="https://github.com/adekang/lu-ui">源码私有</a>
+            <a href="https://adekang.github.io/lu-ui-web/#/">项目预览</a>
           </p>
           <div class="detail">
             <ul>
-              <li>技术栈： <strong>Vue 3</strong> 、<strong>TypeScript</strong>、<strong>SCSS</strong> </li>
-              <li>制作有日常常用的Switch、Button、Dialog、Tabs、Input 等组件。</li>
-              <li>制作思路以及遇到问题记录在<a href="https://www.yuque.com/u12163881/kamvne/fmtkf7">个人博客</a>。</li>
+              <li>技术栈： <strong>React</strong> 、<strong>TypeScript</strong>、<strong>SCSS</strong> </li>
+              <li>实现组件：Button组件：支持各种样式，支持中大小三种尺寸； icon组件：使用svg制作icon组件，支持自定义大小和颜色；
+                input组件：支持头尾文字自定义，支持icon，支持大小变更；layout组件和移动端下拉刷新组件等，整个官网的制作是使用自己的组件制作</li>
+              <li>同时使用Vue3制作了相关组件，<a href="https://adekang.github.io/vue_beans-ui-web/#/">beans UI 项目预览</a>，制作beans ui遇到的问题记录在<a href="https://www.yuque.com/u12163881/kamvne/fmtkf7">个人博客</a></li>
             </ul>
           </div>
         </div> 
@@ -239,29 +240,42 @@
           <div class="detail">
             <ul>
               <li>技术栈：<strong>React</strong>、<strong>React-router</strong>、<strong>TypeScript</strong>、<strong>styled-components</strong> 开发的单移动端页面应用。</li>
-                <li>项目介绍：本应用使用React-router划分了三个分页面:记账，首页，明细，统计。 实现了复杂信息保存，数据统计展示，使用自定义Hooks + localstorage 实现状态管理,使用day.js实现时间管理。</li>
+              <li>项目介绍：本应用使用React-router划分了三个分页面:记账，首页，明细，统计。 实现了复杂信息保存，数据统计展示，使用自定义Hooks + localstorage 实现状态管理,使用day.js实现时间管理。</li>
               <li>实现功能：<strong>记账</strong>、明细、<strong>数据统计</strong>。</li>
               <li>该项目制作时，遇到 webpack 问题，解决方案记录在<a href="https://www.yuque.com/u12163881/kamvne/him1ql">个人博客</a>。</li>
             </ul>
           </div>
         </div>
-
         </div>
         <div class="detail02 page2">
           <div class="timeline-panel">
-            <h3>豆子商品后台管理系统</h3>
+            <h3>会动的皮卡丘</h3>
             <p class="intro">
-              <a href="https://github.com/adekang/beansshop-vue">源码私有</a>
-              <a href="https://adekang.github.io/beansshop-vue-web/#/login">项目预览</a>
+              <a href="https://github.com/adekang/Pikachu">源码私有</a>
+              <a href="https://adekang.github.io/Pikachu/dist/index.html">项目预览</a>
             </p>
             <div class="detail">
               <ul>
-                <li>技术栈：<strong>Vue2</strong>、Vue-router、Vuex、<strong>Element-UI</strong>、Axios、Echarts</li>
-                <li>实现功能：用户管理、权限管理、商品管理、数据统计的统计。</li>
-                <li>该项目的一些制作心得记录在<a href="https://www.yuque.com/u12163881/kamvne/ndcgus">个人博客</a>。</li>
+                <li>技术栈：<strong>Javascript</strong>、HTML5、CSS</li>
+                <li>实现：自动绘画皮卡丘，同时可以跟改绘制的速度</li>
+                <li>这是我在初学js制作的小项目</li>
+              </ul>
+            </div>
+          </div>    
+        <div class="timeline-panel">
+            <h3>智慧店铺可视化</h3>
+            <p class="intro">
+              <a href="https://github.com/adekang/react-visualization-web02">源码私有</a>
+              <a href="https://adekang.github.io/react-visualization-web02/#/">项目预览</a>
+            </p>
+            <div class="detail">
+              <ul>
+                <li>技术栈：<strong>React</strong>、echarts.js、SCSS</li>
+                <li>实现对数据的可视化展示，对数据清晰一览可懂自适应屏幕大小，适配大屏的展示</li>
               </ul>
             </div>
           </div>
+
           <div class="timeline-panel">
             <h3>不二导航</h3>
             <p class="intro">
@@ -298,6 +312,23 @@
         </div>
         </div>    
     </section>  
+    <section>
+      <span class="iconfont  icon-introduction"></span>
+      <h2>实习经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <h3>百词斩</h3>
+          <div class="date"> &nbsp &nbsp &nbsp 2021.09~2021.12</div>
+          <div class="detail">
+            <li>担任职务：前端实习生</li>
+            <li>任务工作：协助开发柚子鸭C端项目（Taro + react），协助开发B端后台管理系统（umi + antD）</li>
+            <li>个人开发下拉刷新组件，实现C端H5页面下拉刷新功能</li>
+            <li>熟悉整个工作流程，多人协同开发</li>
+          </div>
+        </div>        
+      </div>
+    </section> 
         <!-- 教育经历 -->
         <section>
           <span class="iconfont icon-education"></span>
@@ -325,7 +356,7 @@
               我的 <a href="https://www.yuque.com/u12163881">博客</a>，记录了我整个学习的学习笔记和相关心得。   
              </li>
              <li>
-              我的 <a href="https://github.com/adekang">GitHub</a>，过去4个月累计有<strong>600</strong>余次提交。
+              我的 <a href="https://github.com/adekang">GitHub</a>，过去半年累计有<strong>600</strong>余次提交。
              </li>
            </ul>
         </div>
