@@ -160,9 +160,8 @@
       padding-left: 0;
     }
     }
-    .page2 {
-        margin-top: 55px;
-        page-break-before: always;
+    .pageCut {
+      margin-top: 50px;
       }
   </style>
 </head>
@@ -201,16 +200,20 @@
       <div class="detail">
         <ul>
           <li>熟悉使用HTML5标签编写语义化页面。</li>
-          <li>熟悉使用CSS/<strong>SCSS</strong> 、文档流、盒模型、<strong>flex</strong> 、<strong>grid</strong>布局。</li>
-          <li>熟悉JavaScript、<strong>ES6</strong>部分新特性语法、DOM操作、JSONP、原型链的使用，<strong>TypeScript</strong>的使用。</li>
-          <li>熟练使用 <strong>React</strong>、<strong>React-router</strong>和Redux，并有相关项目经验。会使用常用<strong>Hooks API</strong>、生命周期、高阶组件。</li>
+          <li>
+            掌握CSS工程化解决方案，主要是预处理器（<strong>SCSS</strong> ），了解postCSS、<strong>CSS-In-JS</strong>、css modules 、原子CSS
+          </li>
+          <li>熟悉 JavaScript、<strong>TypeScript</strong> 的使用，关注ES新动态，</li> 
+          <li>熟练使用 <strong>React</strong>、<strong>React-router</strong>和Redux，并有相关项目经验。会使用常用<strong>Hooks API</strong>、生命周期、高阶组件。 React框架实现原理的理解。</li>
           <li>熟悉<strong>Vue</strong>框架的模版语法，<strong>响应式原理</strong>，。会使用<strong>Vue-router</strong>、Vuex。</li>
-          <li>了解Git 、Gitlab工作部署；了解webpack基本配置。</li>
+          <li>熟悉前端工程化，掌握webpack相关配置及优化</li>
+          <li>了解Git 、Gitlab工作部署；</li>
         </ul>
       </div>
     </section>
   </aside>
-  <main>    
+  <main>   
+    <!-- 项目经历 -->
     <section>
       <span class="iconfont icon-project"></span>
       <h2>项目经历</h2>
@@ -247,71 +250,38 @@
           </div>
         </div>
         </div>
-        <div class="detail02 page2">
-          <div class="timeline-panel">
-            <h3>会动的皮卡丘</h3>
-            <p class="intro">
-              <a href="https://github.com/adekang/Pikachu">源码私有</a>
-              <a href="https://adekang.github.io/Pikachu/dist/index.html">项目预览</a>
-            </p>
-            <div class="detail">
-              <ul>
-                <li>技术栈：<strong>Javascript</strong>、HTML5、CSS</li>
-                <li>实现：自动绘画皮卡丘，同时可以跟改绘制的速度</li>
-                <li>这是我在初学js制作的小项目</li>
-              </ul>
-            </div>
-          </div>    
-        <div class="timeline-panel">
-            <h3>智慧店铺可视化</h3>
-            <p class="intro">
-              <a href="https://github.com/adekang/react-visualization-web02">源码私有</a>
-              <a href="https://adekang.github.io/react-visualization-web02/#/">项目预览</a>
-            </p>
-            <div class="detail">
-              <ul>
-                <li>技术栈：<strong>React</strong>、echarts.js、SCSS</li>
-                <li>实现对数据的可视化展示，对数据清晰一览可懂自适应屏幕大小，适配大屏的展示</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-panel">
-            <h3>不二导航</h3>
-            <p class="intro">
-              <a href="https://github.com/adekang/Fuji-Navigator">源码私有</a>
-              <a href="https://adekang.github.io/Fuji-Navigator/dist/index.html">项目预览</a>
-            </p>
-            <div class="detail">
-              <ul>
-                <li>技术栈：<strong>JavaScript</strong>、<strong>CSS</strong></li>
-                <li>项目介绍：这是在我学习完HTML、CSS和JavaScript基础后，制作的导航网站。它能自定义导航并且支持<strong>键盘事件</strong>，按下相应首字母，跳转页面。</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section> 
+
+    <div class="pageCut"></div>
+    <!-- 开源项目 -->
     <section>
       <span class="iconfont icon-project"></span>
       <h2>开源项目</h2>
       <hr>
       <div class="detail">
         <div class="timeline-panel">
-          <h3>TodoList</h3>
+          <h3>云音乐</h3>
           <p class="intro">
-            <a href="https://github.com/adekang/vue3-todoList">源码私有</a>
-            <a href="https://adekang.github.io/vue3-todoList-web/index.html">项目预览</a>
+            <a href="https://github.com/adekang/cloud-music-v1">源码私有</a>
+            <a href="https://adekang.github.io/cloud-music-v1/#/recommend">项目预览</a>
           </p>
           <div class="detail">
             <ul>
-              <li>技术栈：Vue3、TypeScript</li>
-              <li>项目介绍：基于自己打卡需求，制作了一个TODO待办,输入信息后按enter记录，使用localstorage进行<strong>数据持久化存储</strong>，实现可全选一键删除和删除已选中TODO。</li>
+              <li>技术栈：React全家桶、TypeScript、SCSS</li>
+              <li>项目介绍：项目介绍:基于react 全家桶(包含 Hooks)以及 immutable 数据流为基础仿网易云音乐 UI 打造
+                一款高质量的 WebApp。</li>
+              <li>  实现推荐页、排行页、歌手页，搜索页等页面。</li>
+              <li>  使用react-transition-group实现页面切换连贯丝滑。</li>
+              <li> 使用immutable库进行持久性数据结构处理。</li>
+              <li> 重要组件有：Player组件实现小屏和全屏播放器，实现三种播放模式。基于better-scroll封装
+                的scroll 组件，使界面滑动更加顺畅。</li>
             </ul>
           </div>
         </div>
         </div>    
     </section>  
+    <!-- 实习经历 -->
     <section>
       <span class="iconfont  icon-introduction"></span>
       <h2>实习经历</h2>
@@ -329,23 +299,24 @@
         </div>        
       </div>
     </section> 
-        <!-- 教育经历 -->
-        <section>
-          <span class="iconfont icon-education"></span>
-          <h2>教育经历</h2>
-          <hr>
+    <!-- 教育经历 -->
+    <section>
+      <span class="iconfont icon-education"></span>
+      <h2>教育经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <h3>成都东软学院</h3>
+          <div class="date"> &nbsp &nbsp &nbsp 2018.09~2022.07</div>
+          <p class="intro">电子商务专业</p>
           <div class="detail">
-            <div class="timeline-panel">
-              <h3>成都东软学院</h3>
-              <div class="date"> &nbsp &nbsp &nbsp 2018.09~2022.07</div>
-              <p class="intro">电子商务专业</p>
-              <div class="detail">
-                <li>主修课程：商务网站网页设计实务、动态商务网站设计基础、电商视觉设计、电子商务数据分析与处理、商务网站美术设计等</li>
-                <li>获奖和证书:CET4、计算机二级证书、初级会计证书、新零售比赛二等奖、视频剪辑比赛院一等奖</li>
-              </div>
-            </div>        
+            <li>主修课程：商务网站网页设计实务、动态商务网站设计基础、电商视觉设计、电子商务数据分析与处理、商务网站美术设计等</li>
+            <li>获奖和证书:CET4、计算机二级证书、初级会计证书、新零售比赛二等奖、视频剪辑比赛院一等奖</li>
           </div>
-        </section> 
+        </div>        
+      </div>
+    </section> 
+    <!-- 其他链接 -->
     <section>
       <span class="iconfont icon-project"></span>
       <h2>其他链接</h2>
