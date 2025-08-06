@@ -6,7 +6,7 @@ export default function Section({ title, children, icon }) {
       <div className="flex items-center mb-4">
         {icon && (
           <div className="w-8 h-8 bg-slate-500 rounded-md flex items-center justify-center mr-3 text-white text-sm">
-            <Icon icon={icon} />
+            <Icon icon={icon} className="w-4 h-4" />
           </div>
         )}
         <h2 className="text-xl font-semibold text-gray-800 flex-1">{title}</h2>

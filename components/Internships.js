@@ -9,7 +9,7 @@ export default function Internships() {
         <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-400">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-slate-500 rounded-lg flex items-center justify-center text-white text-lg">
-              <Icon icon={faBuilding} />
+              <Icon icon={faBuilding} className="w-5 h-5" />
             </div>
             <div className="flex-1">
               <h3 className="text-xl font-bold text-gray-800">中国工程物理研究院</h3>
@@ -22,7 +22,7 @@ export default function Internships() {
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="flex items-start gap-3">
                 <span className="text-slate-500 mt-1">
-                  <Icon icon={faChartBar} />
+                  <Icon icon={faChartBar} className="w-4 h-4" />
                 </span>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">配方数据管理平台</h4>
@@ -33,7 +33,7 @@ export default function Internships() {
             <div className="bg-white p-4 rounded-lg shadow-sm">
               <div className="flex items-start gap-3">
                 <span className="text-slate-500 mt-1">
-                  <Icon icon={faLock} />
+                  <Icon icon={faLock} className="w-4 h-4" />
                 </span>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">涉密信息安全平台</h4>
@@ -47,7 +47,7 @@ export default function Internships() {
         <div className="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-400">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-slate-500 rounded-lg flex items-center justify-center text-white text-lg">
-              <Icon icon={faBuilding} />
+              <Icon icon={faBuilding} className="w-5 h-5" />
             </div>
             <div className="flex-1">
               <h3 className="text-xl font-bold text-gray-800">成都超有爱科技有限公司</h3>
@@ -59,19 +59,19 @@ export default function Internships() {
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-slate-500 mt-1">
-                <Icon icon={faMobile} />
+                <Icon icon={faMobile} className="w-4 h-4" />
               </span>
               <span>参与开发柚子鸭 C 端小程序（Taro + React）及 B 端后台管理系统（UmiJS + Ant Design）。</span>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-slate-500 mt-1">
-                <Icon icon={faSync} />
+                <Icon icon={faSync} className="w-4 h-4" />
               </span>
               <span>独立开发下拉刷新组件，适配移动端 H5 页面，提升交互体验。</span>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-slate-500 mt-1">
-                <Icon icon={faHandshake} />
+                <Icon icon={faHandshake} className="w-4 h-4" />
               </span>
               <span>熟悉企业级多人协作流程，包括分支管理、任务拆分。</span>
             </div>

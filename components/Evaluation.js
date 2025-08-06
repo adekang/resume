@@ -9,7 +9,7 @@ export default function Evaluation() {
         <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-slate-500 text-lg">
-              <Icon icon={faRocket} />
+              <Icon icon={faRocket} className="w-4 h-4" />
             </span>
             <h4 className="font-semibold text-gray-800">个人品质</h4>
           </div>
@@ -32,7 +32,7 @@ export default function Evaluation() {
         <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-slate-500 text-lg">
-              <Icon icon={faHandshake} />
+              <Icon icon={faHandshake} className="w-4 h-4" />
             </span>
             <h4 className="font-semibold text-gray-800">团队合作</h4>
           </div>
@@ -55,7 +55,7 @@ export default function Evaluation() {
         <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-slate-500 text-lg">
-              <Icon icon={faBook} />
+              <Icon icon={faBook} className="w-4 h-4" />
             </span>
             <h4 className="font-semibold text-gray-800">技术热情</h4>
           </div>
@@ -74,7 +74,7 @@ export default function Evaluation() {
         <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-slate-500 text-lg">
-              <Icon icon={faBullseye} />
+              <Icon icon={faBullseye} className="w-4 h-4" />
             </span>
             <h4 className="font-semibold text-gray-800">工作态度</h4>
           </div>
