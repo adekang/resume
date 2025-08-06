@@ -10,21 +10,23 @@ import Evaluation from '../components/Evaluation';
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto p-4">
-      <Header />
-      <div className="grid md:grid-cols-3 gap-8">
-        <aside className="md:col-span-1">
-          <BasicInfo />
-          <Skills />
-        </aside>
-        <main className="md:col-span-2">
-          <Projects />
-          <OpenSource />
-          <Internships />
-          <Education />
-          <Links />
-          <Evaluation />
-        </main>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-5xl mx-auto p-4 md:p-6">
+        <Header />
+        <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
+          <aside className="lg:col-span-1 space-y-6">
+            <BasicInfo />
+            <Skills />
+          </aside>
+          <main className="lg:col-span-2 space-y-6">
+            <Projects />
+            <OpenSource />
+            <Internships />
+            <Education />
+            <Links />
+            <Evaluation />
+          </main>
+        </div>
       </div>
     </div>
   );
