@@ -1,0 +1,20 @@
+import Icon from './Icon';
+
+export default function Section({ title, children, icon }) {
+  return (
+    <section className="bg-white rounded-lg shadow-sm p-6 mb-6 border border-gray-200 hover:shadow-md transition-shadow">
+      <div className="flex items-center mb-4">
+        {icon && (
+          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center mr-3 text-white text-sm">
+            <Icon icon={icon} className="w-4 h-4" />
+          </div>
+        )}
+        <h2 className="text-xl font-semibold text-primary-dark flex-1">{title}</h2>
+        <div className="w-8 h-0.5 bg-primary-light rounded-full"></div>
+      </div>
+      <div className="text-gray-800 leading-relaxed">
+        {children}
+      </div>
+    </section>
+  );
+}

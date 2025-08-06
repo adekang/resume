@@ -7,10 +7,6 @@ export default function BasicInfo() {
       <ul className="space-y-2">
         <li className="flex items-start gap-3 py-2">
           <span className="text-gray-500 mt-0.5">•</span>
-          <span><strong>性别：</strong>男</span>
-        </li>
-        <li className="flex items-start gap-3 py-2">
-          <span className="text-gray-500 mt-0.5">•</span>
           <div>
             <strong>电话：</strong>
             <a className="text-slate-600 hover:text-slate-700" href="tel:18398203270">
