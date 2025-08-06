@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: '.', // 使用相对路径前缀
-  trailingSlash: true, // 确保路径以斜杠结尾
+  distDir: 'out',
+  trailingSlash: true,
   images: {
-    unoptimized: true // 静态导出时需要
-  }
+    unoptimized: true
+  },
+  // 移除相对路径前缀，Cloudflare Pages 处理更好
+  // assetPrefix: '.',
 };
 
 module.exports = nextConfig;
