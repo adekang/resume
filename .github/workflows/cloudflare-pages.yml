@@ -25,13 +25,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          cache: 'pnpm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9.15.2
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build Next.js app
-        run: npm run build
+        run: pnpm run build
         env:
           NODE_ENV: production
 
@@ -40,6 +45,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: resume-app  # 替换为您的 Cloudflare Pages 项目名
+          projectName: resume  # 替换为您的 Cloudflare Pages 项目名
           directory: out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

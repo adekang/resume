@@ -6,7 +6,15 @@
 
 - Cloudflare 账户
 - GitHub 账户
-- 已安装 Node.js 和 npm
+- 已安装 Node.js 和 pnpm@9.15.2
+
+```bash
+# 安装 pnpm (如果尚未安装)
+npm install -g pnpm@9.15.2
+
+# 验证版本
+pnpm --version
+```
 
 ## 🚀 部署步骤
 
@@ -38,9 +46,9 @@
 3. 选择 **连接到 Git**
 4. 选择您的 GitHub 仓库
 5. 配置构建设置：
-   - **项目名称**: `resume-app`（或您喜欢的名称）
+   - **项目名称**: `resume`（或您喜欢的名称）
    - **生产分支**: `master`
-   - **构建命令**: `npm run build`
+   - **构建命令**: `pnpm run build`
    - **构建输出目录**: `out`
    - **Root directory**: `/`（保持空白）
 
@@ -48,32 +56,32 @@
 
 ```bash
 # 安装 Wrangler CLI（如果尚未安装）
-npm install -g wrangler
+pnpm add -g wrangler
 
 # 登录 Cloudflare
 wrangler login
 
 # 创建 Pages 项目
-wrangler pages project create resume-app
+wrangler pages project create resume
 ```
 
 ### 4. 本地开发和测试
 
 ```bash
 # 安装依赖
-npm install
+pnpm install
 
 # 本地开发
-npm run dev
+pnpm dev
 
 # 构建项目
-npm run build
+pnpm build
 
 # 本地预览 Cloudflare Pages 构建
-npm run preview
+pnpm preview
 
 # 手动部署到 Cloudflare Pages
-npm run cf:deploy
+pnpm cf:deploy
 ```
 
 ## 📁 项目结构
@@ -88,14 +96,14 @@ npm run cf:deploy
 └── package.json               # 项目依赖和脚本
 ```
 
-## 🔧 可用的 npm 脚本
+## 🔧 可用的 pnpm 脚本
 
-- `npm run dev` - 启动开发服务器
-- `npm run build` - 构建生产版本
-- `npm run pages:build` - 使用 Cloudflare 适配器构建
-- `npm run preview` - 本地预览 Cloudflare Pages 构建
-- `npm run deploy` - 构建并部署到 Cloudflare Pages
-- `npm run cf:deploy` - 直接部署现有构建到 Cloudflare Pages
+- `pnpm dev` - 启动开发服务器
+- `pnpm build` - 构建生产版本
+- `pnpm pages:build` - 使用 Cloudflare 适配器构建
+- `pnpm preview` - 本地预览 Cloudflare Pages 构建
+- `pnpm deploy` - 构建并部署到 Cloudflare Pages
+- `pnpm cf:deploy` - 直接部署现有构建到 Cloudflare Pages
 
 ## 🌍 自动部署
 
@@ -108,7 +116,7 @@ npm run cf:deploy
 ## 🔗 访问您的网站
 
 部署完成后，您的网站将在以下地址可用：
-- `https://resume-app.pages.dev`（默认域名）
+- `https://resume.pages.dev`（默认域名）
 - 您也可以在 Cloudflare Pages 控制台中配置自定义域名
 
 ## 🛠️ 故障排除
