@@ -2,10 +2,10 @@ import Icon from './Icon';
 
 export default function Section({ title, children, icon }) {
   return (
-    <section className="bg-white rounded-lg shadow-sm p-6 mb-6 border border-gray-200 hover:shadow-md transition-shadow">
+    <section className="bg-white rounded-lg shadow-sm p-6 mb-6 border border-gray-200 hover:shadow-md transition-all duration-300 hover-scale hover-glow">
       <div className="flex items-center mb-4">
         {icon && (
-          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center mr-3 text-white text-sm">
+          <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center mr-3 text-white text-sm hover-scale transition-transform duration-300">
             <Icon icon={icon} className="w-4 h-4" />
           </div>
         )}

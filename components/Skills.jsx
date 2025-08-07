@@ -3,7 +3,10 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons';
 
 // 创建一个高亮技术的组件
 const HighlightTech = ({ children }) => (
-  <span className="text-highlight font-medium">{children}</span>
+  <span className="text-highlight font-medium relative inline-block hover-scale transition-transform duration-300">
+    {children}
+    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-highlight opacity-50 rounded-full animate-pulse-custom"></span>
+  </span>
 );
 
 export default function Skills() {

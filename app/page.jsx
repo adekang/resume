@@ -10,21 +10,44 @@ import Evaluation from '../components/Evaluation';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background-light">
       <div className="max-w-5xl mx-auto p-4 md:p-6">
-        <Header />
+        {/* 头部区域使用缩放淡入动画 */}
+        <div className="animate-zoomIn">
+          <Header />
+        </div>
+
         <div className="grid lg:grid-cols-3 gap-6 md:gap-8">
-          <aside className="lg:col-span-1 space-y-6">
-            <BasicInfo />
-            <Skills />
+          {/* 左侧栏使用从左侧滑入动画 */}
+          <aside className="lg:col-span-1 space-y-6 animate-slideInLeft delay-200">
+            <div className="animate-fadeIn delay-300">
+              <BasicInfo />
+            </div>
+            <div className="animate-fadeIn delay-500">
+              <Skills />
+            </div>
           </aside>
-          <main className="lg:col-span-2 space-y-6">
-            <Projects />
-            <OpenSource />
-            <Internships />
-            <Education />
-            <Links />
-            <Evaluation />
+
+          {/* 主内容区使用从右侧滑入动画 */}
+          <main className="lg:col-span-2 space-y-6 animate-slideInRight delay-200">
+            <div className="animate-fadeIn delay-300">
+              <Projects />
+            </div>
+            <div className="animate-fadeIn delay-400">
+              <OpenSource />
+            </div>
+            <div className="animate-fadeIn delay-500">
+              <Internships />
+            </div>
+            <div className="animate-fadeIn delay-600">
+              <Education />
+            </div>
+            <div className="animate-fadeIn delay-700">
+              <Links />
+            </div>
+            <div className="animate-fadeIn delay-800">
+              <Evaluation />
+            </div>
           </main>
         </div>
       </div>
