@@ -16,7 +16,7 @@ export default function Links() {
                 <span className="text-gray-700">我的</span>
                 <a
                   href="https://www.yuque.com/u12163881"
-                  className="text-slate-600 hover:text-slate-700 font-semibold transition-colors"
+                  className="text-primary-dark hover:text-primary font-semibold transition-colors underline decoration-1 underline-offset-2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -41,7 +41,7 @@ export default function Links() {
                 <span className="text-gray-700">我的</span>
                 <a
                   href="https://github.com/adekang"
-                  className="text-slate-600 hover:text-slate-700 font-semibold transition-colors"
+                  className="text-primary-dark hover:text-primary font-semibold transition-colors underline decoration-1 underline-offset-2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
