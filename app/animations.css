@@ -176,3 +176,12 @@
 .hover-glow:hover {
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
 }
+
+/* 遵循系统“减少动态”偏好 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

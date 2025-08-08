@@ -4,7 +4,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 export default function OpenSource() {
   return (
     <Section title="开源项目" icon={faStar}>
-      <div className="border-l-4 border-slate-400 pl-6">
+      <div>
         <div className="flex items-center gap-3 mb-4">
           <h3 className="text-lg font-semibold text-gray-800">中后台项目模板框架</h3>
           <span className="bg-slate-100 text-slate-700 px-2 py-1 rounded text-sm font-medium">

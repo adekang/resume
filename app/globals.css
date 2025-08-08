@@ -4,3 +4,17 @@
 
 /* 引入自定义动画样式 */
 @import './animations.css';
+
+/* 可访问性：可见焦点样式 */
+:root { --ring: 0 0 0 3px rgba(59,130,246,.4); }
+a:focus-visible, button:focus-visible { outline: none; box-shadow: var(--ring); border-radius: 6px; }
+
+/* 打印样式优化：一页纸简历友好 */
+@media print {
+  html, body { background: #fff !important; }
+  .shadow-sm, .shadow-md { box-shadow: none !important; }
+  .bg-slate-50 { background: transparent !important; }
+  section { break-inside: avoid; page-break-inside: avoid; }
+  a::after { content: " (" attr(href) ")"; font-size: 0.85em; color: #555; }
+  .animate-fadeIn, .animate-slideInLeft, .animate-slideInRight, .animate-zoomIn { animation: none !important; }
+}

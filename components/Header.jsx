@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Header() {
   return (
     <header className="bg-white text-slate-800 p-6 rounded-xl mb-5 shadow-sm transition-all duration-300">
@@ -16,13 +18,24 @@ export default function Header() {
             专注现代前端技术，具有丰富的项目经验和团队协作能力
           </p>
         </div>
-        <div className="ml-4 animate-zoomIn delay-100">
-          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white p-0.5 shadow-sm hover:shadow transition-all duration-300">
-            <img
+        <div className="ml-4 animate-zoomIn delay-100 text-right">
+          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white p-0.5 shadow-sm hover:shadow transition-all duration-300 inline-block">
+            <Image
               src="https://i.loli.net/2021/10/29/AEQDrgG7S4vhOtJ.jpg"
               alt="康毅龙的头像"
-              className="w-full h-full rounded-full object-cover"
+              width={96}
+              height={96}
+              priority
+              className="rounded-full object-cover w-full h-full"
             />
+          </div>
+          <div>
+            <button
+              onClick={() => typeof window !== 'undefined' && window.print()}
+              className="mt-2 text-xs text-primary-dark underline decoration-1 underline-offset-2 hover:text-primary"
+            >
+              下载 PDF
+            </button>
           </div>
         </div>
       </div>

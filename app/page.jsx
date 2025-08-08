@@ -18,8 +18,8 @@ export default function Home() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-4 md:gap-5">
-          {/* 左侧栏使用从左侧滑入动画 */}
-          <aside className="lg:col-span-1 space-y-5 animate-slideInLeft delay-100">
+          {/* 左侧栏在移动端排在后面，桌面端在左侧 */}
+          <aside className="order-2 lg:order-1 lg:col-span-1 space-y-5 animate-slideInLeft delay-100">
             <div className="animate-fadeIn delay-200">
               <BasicInfo />
             </div>
@@ -28,8 +28,8 @@ export default function Home() {
             </div>
           </aside>
 
-          {/* 主内容区使用从右侧滑入动画 */}
-          <main className="lg:col-span-2 space-y-5 animate-slideInRight delay-100">
+          {/* 主内容区在移动端优先显示 */}
+          <main id="main" className="order-1 lg:order-2 lg:col-span-2 space-y-5 animate-slideInRight delay-100">
             <div className="animate-fadeIn delay-200">
               <Projects />
             </div>
