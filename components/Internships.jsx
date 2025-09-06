@@ -25,8 +25,16 @@ export default function Internships() {
                   <Icon icon={faChartBar} className="w-4 h-4" />
                 </span>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">配方数据管理平台</h4>
-                  <p className="text-gray-700">从 0 到 1 负责前端开发，3 个月交付 30+ 页面并上线；使用 MathJS + KaTeX 支持复杂公式解析与渲染；设计模块化 Axios 请求体系，支持 Token 注入与刷新、统一异常处理；封装 Hooks 和表单组件，优化性能预测模块流程与表单交互；实现功能引导、模糊搜索、表格拖拽、主题变更等优化。</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">配方数据管理平台 - 前端开发</h4>
+                  <p className="text-gray-700 mb-3">项目介绍：为中国工程物理研究院（中物院）开发的军用配方数据管理平台，面向军用配方的管理、性能预测与模型评估，系统具备公式编辑能力与类工作流流程控制，项目周期 3 个月，交付 30+ 页面并稳定上线。</p>
+                  <p className="text-sm text-gray-600 mb-2"><strong>技术栈：</strong>Vue3 | Vite | Less | Axios | Pinia | Element-plus | Katex</p>
+                  <ul className="space-y-1 text-sm text-gray-700">
+                    <li>• 从<strong> 0 -1 负责整个前端平台的开发工作</strong>，开发周期 3 个月，设计业务页面 30 余个，各里程碑确认无延期</li>
+                    <li>• 项目中涉及大量化工/物理公式输入与动态展示，采用 Katex 实现<strong>公式解析</strong>，满足科研级公式精度与样式要求</li>
+                    <li>• 性能预测模块以流程驱动为核心，前端需处理复杂且状态多变的业务表单，通过实现分步校验、流程状态管控及前端缓存机制，提升表单交互的连贯性与数据填报的稳定性</li>
+                    <li>• 通过封装 Hooks、组件 的方式，针对大量复杂表单进行统一处理，沉淀 5 个 Hooks 和 3 个表单处理组件</li>
+                    <li>• 其他的功能优化，比如：功能引导、模糊搜索、表格拖拽、主题变更 等</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -36,8 +44,14 @@ export default function Internships() {
                   <Icon icon={faLock} className="w-4 h-4" />
                 </span>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">涉密信息安全平台</h4>
-                  <p className="text-gray-700">复用请求体系与通用组件，高效搭建表单、权限等模块，缩短开发周期约 30%；封装基于 ECharts 的通用图表组件，优化大体积 JSON 渲染；实现 Excel 导入导出并通过异步拆分与延迟渲染提升稳定性；通过图片、组件懒加载等策略优化首屏性能与内存占用；负责打包优化等功能。</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">涉密信息安全平台 - 前端开发</h4>
+                  <p className="text-sm text-gray-600 mb-2"><strong>技术栈：</strong>Vue3 | Vite | Pinia | TailwindCSS | Echarts</p>
+                  <ul className="space-y-1 text-sm text-gray-700">
+                    <li>• 基于之前沉淀的基础功能化方案、功能组件，完成快速的项目搭建与开发，超预期 30% 完成项目交付</li>
+                    <li>• 基于 ECharts 封装支持多参数联动更新的通用图表组件。通过<strong>优化大JSON</strong>的渲染策略，有效解决性能瓶颈，显著提升图表的加载速度与交互流畅度。</li>
+                    <li>• 为解决大数据可视化带来的性能挑战，主导实施多项优化策略，包括组件懒注册、图表异步加载与图片懒加载，降低首屏加载时间和内存占用。</li>
+                    <li>• 基于 XLSX 完成 Excel 数据的导入、导出逻辑，其中解析算法均为团队自主实现</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -61,19 +75,19 @@ export default function Internships() {
               <span className="text-slate-500 mt-1">
                 <Icon icon={faMobile} className="w-4 h-4" />
               </span>
-              <span>参与开发柚子鸭 C 端小程序（Taro + React）及 B 端后台管理系统（UmiJS + Ant Design）。</span>
+              <span>参与开发柚子鸭 C 端小程序项目（基于 Taro + React）及 B 端后台管理系统（基于 UmiJS + Ant Design），负责功能模块实现与组件封装</span>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-slate-500 mt-1">
                 <Icon icon={faSync} className="w-4 h-4" />
               </span>
-              <span>独立开发下拉刷新组件，适配移动端 H5 页面，提升交互体验。</span>
+              <span>独立开发下拉刷新组件，适配移动端 H5 页面，实现数据刷新与回弹动画，提升用户交互体验</span>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-slate-500 mt-1">
                 <Icon icon={faHandshake} className="w-4 h-4" />
               </span>
-              <span>熟悉企业级多人协作流程，包括分支管理、任务拆分。</span>
+              <span>熟悉并融入企业级多人协作流程，包括分支管理、任务拆分，协同推进产品快速上线</span>
             </div>
           </div>
         </div>

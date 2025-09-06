@@ -17,9 +17,16 @@ export default function Home() {
           <Header />
         </div>
 
+        {/* 移动端基本信息优先显示 */}
+        <div className="lg:hidden mb-5">
+          <div className="animate-fadeIn delay-200">
+            <BasicInfo />
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-3 gap-4 md:gap-5">
-          {/* 左侧栏在移动端排在后面，桌面端在左侧 */}
-          <aside className="order-2 lg:order-1 lg:col-span-1 space-y-5 animate-slideInLeft delay-100">
+          {/* 左侧栏只在桌面端显示 */}
+          <aside className="hidden lg:block lg:col-span-1 space-y-5 animate-slideInLeft delay-100">
             <div className="animate-fadeIn delay-200">
               <BasicInfo />
             </div>
@@ -28,8 +35,8 @@ export default function Home() {
             </div>
           </aside>
 
-          {/* 主内容区在移动端优先显示 */}
-          <main id="main" className="order-1 lg:order-2 lg:col-span-2 space-y-5 animate-slideInRight delay-100">
+          {/* 主内容区 */}
+          <main id="main" className="lg:col-span-2 space-y-5 animate-slideInRight delay-100">
             <div className="animate-fadeIn delay-200">
               <Projects />
             </div>
@@ -49,6 +56,13 @@ export default function Home() {
               <Evaluation />
             </div>
           </main>
+          
+          {/* 移动端技能信息放在最后 */}
+          <div className="lg:hidden">
+            <div className="animate-fadeIn delay-300">
+              <Skills />
+            </div>
+          </div>
         </div>
       </div>
     </div>
